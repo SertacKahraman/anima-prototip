@@ -400,7 +400,11 @@ function WelcomeScreen({ onStart, onLogin }) {
       <section className="auth-shell">
         <LogoMark />
         <div className="welcome-hero-art" aria-hidden="true">
-          <Sparkles size={42} />
+          <img
+            src={imageAssets.dailyAdventure}
+            alt="ANIMA Adventure"
+            style={{ width: "100%", height: "100%", objectFit: "cover", borderRadius: "inherit" }}
+          />
         </div>
         <div className="auth-copy">
           <p className="eyebrow">Accessible animated learning</p>
