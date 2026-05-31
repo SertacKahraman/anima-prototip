@@ -41,8 +41,8 @@ import {
 
 const profiles = [
   {
-    id: "yagmur",
-    name: "Yagmur",
+    id: "Yağmur",
+    name: "Yağmur",
     level: 3,
     points: 245,
     streak: 4,
@@ -52,7 +52,7 @@ const profiles = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuApOwh5qBLyB2P4-kmU6H-rgW7aEFJ4uBcm0xPoQg9nBrB80iEaddjrPcY8avCmPOWN-85TOxBYxyZpN1GtsKOVQEqJfTWhpFfguL6pZFfJdONqeSfU-XbeUiKPY9GoWuhkyL_pe746weWuyaAv3ES60wYulnTmQ4PDn3_fUEAqhBnrGk68YuP_w5d-gJnQdDSBpOkkqY3K1rDMcsLyUBPt4nSO3f0WTAggLRqQao6ueraJzxAy-u_exNYWISOjWeKoamokasQsXus",
   },
   {
-    id: "umay",
+    id: "Umay",
     name: "Umay",
     level: 2,
     points: 180,
@@ -63,7 +63,7 @@ const profiles = [
       "https://lh3.googleusercontent.com/aida-public/AB6AXuD6P157U7ZJo3nPqoDU3_HTlFUhyrGUCeMNO7Y_aWlDsF9YpUtQnwlGIxdraTN1b8O6vPoX5Vhnx2RGRccOu05LN_XsBOSZrVcMf5-8wYURqEW2oSEnxcHmRFjkn1ZSi3HUubBIA_GB9ZTkr4qsu14Yq72dKF-rdbxY8b-O6dx0Cu0bR6hEvFeBjXUfHtu5b30bzmtPqwcVWfW3oDs8RRZSvil69GNnYQIFx0VlXYag-WC5RczzZrb_s3EBc-DE4ZtaI9yi0iaSUqE",
   },
   {
-    id: "derin",
+    id: "Derin",
     name: "Derin",
     level: 4,
     points: 390,
@@ -438,11 +438,11 @@ function CreateProfileScreen({ onCreate, onBack }) {
         </div>
         <label className="field">
           <span>Name</span>
-          <input type="text" defaultValue="Yagmur Hilalogu" />
+          <input type="text" defaultValue="Yağmur Hülagü" />
         </label>
         <label className="field">
           <span>Username</span>
-          <input type="text" defaultValue="yagmur" />
+          <input type="text" defaultValue="Yağmur" />
         </label>
         <label className="field">
           <span>Password optional</span>
@@ -1128,7 +1128,7 @@ function ProfileScreen({ profile, onNavigate }) {
           <img src={profile.avatar} alt={`${profile.name} profile`} />
         </div>
         <div>
-          <h1>{profile.name} Hilalogu</h1>
+          <h1>{profile.name} Hülagü</h1>
           <p>Level {profile.level} explorer</p>
           <ChunkProgress value={3} total={5} tone="space" />
           <strong>{profile.points} Points</strong>
