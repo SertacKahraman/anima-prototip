@@ -516,12 +516,13 @@ function AppTopBar({ profile, onProfileClick, onHomeClick }) {
   return (
     <header className="app-topbar">
       <button
-        aria-label="ANIMA stars"
-        className="icon-button"
+        aria-label={`${profile.points} ANIMA stars`}
+        className="icon-button star-score-button"
         type="button"
         onClick={onHomeClick}
       >
         <Star size={25} />
+        <span className="star-score-value">{profile.points}</span>
       </button>
       <strong className="app-title">ANIMA</strong>
       <button className="profile-avatar-button" type="button" onClick={onProfileClick} aria-label="Profile">
